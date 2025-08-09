@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Add = () => {
-  const url = "http://localhost:5000";
+  const url = "https://food-del-backend-j6pf.onrender.com";
   const [image, setImage] = useState(false);
 
   const [data, setData] = useState({
@@ -34,7 +34,7 @@ const Add = () => {
     formData.append("price", data.price);
     formData.append("image", image);
 try {
-  const res = await axios.post("http://localhost:5000/api/food/add", formData);
+  const res = await axios.post("https://food-del-backend-j6pf.onrender.com/api/food/add", formData);
   toast.success("Food added successfully!");
 } catch (err) {
   console.error(err);

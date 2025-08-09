@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import { assets } from '../../assets/assets'
 
 const Order = () => {
-  const url = "http://localhost:4000"
+  const url = "https://food-del-backend-j6pf.onrender.com"
   const [orders,setOrders] = useState([])
 
   const fetchOrders = async()=>{
